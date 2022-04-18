@@ -1,3 +1,7 @@
 .abc{
     color: #0a0a0a;
 }
+.bg-white{
+    background-color: red;
+    background-size: cover
+}
