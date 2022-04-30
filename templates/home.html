@@ -1,3 +1,6 @@
 {% extends 'shabl2.html' %}
 
-<title>{% block title%} Home {% endblock %}</title>
+{% block title %} Home {% endblock %}
+<body> {% block body %}<p>Ниже приведен список олимпийских видов спорта, доступных на данный момент:</p>
+                       <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8080//WaterPolo">1. Водное поло</a>
+                        <a class="nav-link active" aria-current="page" href="http://127.0.0.1:8080/Voleyball">2. Волейбол</a>{% endblock %} </body>
