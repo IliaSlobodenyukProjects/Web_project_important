@@ -27,9 +27,9 @@ def Voleyball():
 def AboutUs():
     return render_template('about_us.html')
 
-@app.route('/Contacts')
-def Contacts():
-    return render_template('Contacts.html')
+@app.route('/Osoben')
+def Osoben():
+    return render_template('Особенности.html')
 
 
 if __name__ == '__main__':
