@@ -31,6 +31,10 @@ def AboutUs():
 def Osoben():
     return render_template('Особенности.html')
 
+@app.route('/Otzov')
+def Otzov():
+    return render_template('Otzovi.html')
+
 
 if __name__ == '__main__':
     app.run(port=8080, host='127.0.0.1', debug=True)
