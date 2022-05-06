@@ -13,14 +13,27 @@ def home():
     return render_template('home.html')
 
 
+@app.route('/WaterPolo')
+def waterpolo():
+    return render_template('ВодноеПоло.html')
+
+
+@app.route('/Voleyball')
+def Voleyball():
+    return render_template('Voleyball.html')
+
+
 @app.route('/AboutUs')
 def AboutUs():
-    return 'AboutUs'
+    return render_template('about_us.html')
 
+@app.route('/Osoben')
+def Osoben():
+    return render_template('Особенности.html')
 
-@app.route('/name')
-def name():
-    return render_template('index.html')
+@app.route('/Otzov')
+def Otzov():
+    return render_template('Otzovi.html')
 
 
 if __name__ == '__main__':

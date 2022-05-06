@@ -1,18 +1,3 @@
-body{
-    margin: 18%;
-    background: url('images/IMG_IMP.png');
-    background-size: cover;
-    font-family: 'Times New Roman', 'Oswald', 'Lato', 'Roboto', sans-serif;
-    font-size: 20px;
-}
-
 .abc{
-    padding: 5%;
-    background: linear-gradient(black, blue);
-    color: #E0E0E0;
-}
-
-.butt{
-    background: linear-gradient(black, blue);
-    color: #E0E0E0;
+    color: #0a0a0a;
 }

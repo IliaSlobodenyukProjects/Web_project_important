@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+       <title>Испытание: через тернии к звёздам</title>
+       <meta charset="utf-8">
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/shabl3.css')}}">
+    </head>
+    <body>
+        <header class="page-header">Форма отзыва</header>
+        <main>
+            <form action="/echo" method="post" oninput="daysoutput.value=dayscount.value">
+            <fieldset>
+                <legend>Личные данные</legend>
+                <div class="half-width">
+                    <label>ID отзыва</label>
+                    <input type="text" value="12345" disabled>
+                </div>
+                <div class="half-width">
+			        <label for="1">Имя Пользователя</label>
+			        <input id="1" type="text" value="Кекс">
+		        </div>
+		    </fieldset>
+		    <fieldset>
+                <legend>Отзыв о работе</legend>
+			    <div class="half-width">
+			        <label >Страна пользователя</label>
+			     <input type="search" value="Германия">
+		         </div>
+			     <div class="half-width">
+			        <label >Город</label>
+					 <input type="search" value="Париж :)">
+			    </div>
+			    <div class="half-width">
+			    <label>Оценка</label>
+    			    0 <input type="range" min="0" max="10" step="1" name="dayscount" value="10"> 10
+    			</div>
+    			<div class="half-width output-area">
+    			      <output name="daysoutput">10</output>
+    			</div>
+    			<label for="4">Текст отзыва</label>
+    			<textarea id="4" rows="5">Это было просто мяу!</textarea>
+            </fieldset>
+			    <label>Оценка работы</label>
+			    <select multiple>
+			        <option selected>Отлично</option>
+			        <option>Хорошо</option>
+			        <option selected>Нормально</option>
+			        <option>Плохо</option>
+			        <option>Идите лучше уроки делать</option>
+			     </select>
+            </fieldset>
+        		<div class="buttons">
+        		    <input type="submit" value="Оценить">
+        		    <input type="reset" value="Сбросить">
+    			</div>
+		    </form>
+        </main>
+        <footer class="page-footer"></footer>
+    </body>
+</html>
+</html>
